@@ -67,11 +67,13 @@
         }
           .couple-names {
       font-family: "Playwrite DE SAS", cursive;
-      font-size: 80px;
+      font-size: 60px;
       color: #FFD700;
       text-shadow: 2px 2px 8px #f3e507;
       letter-spacing: 2px;
       transition: all 0.3s ease;
+    font-weight: bold;
+    text-align: center;
     }
 
     .couple-names:hover {
@@ -622,7 +624,7 @@
 }
 
 .invitation-mid img {
-    width: 80px;
+    width: 200px;
 }
 
 .event-title {
@@ -665,7 +667,19 @@
     font-size: 20px;
     margin-bottom: 10px;
 }
-
+.and-symbol {
+    margin: 0 8px;
+    font-size: 28px;
+    font-weight: normal;
+    color: #d1c44c; /* beautiful pink/maroon tone */
+}
+.header-video {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
     </style>
 </head>
 <body>
@@ -685,8 +699,12 @@
         </div>
         
         <div class="header-content container">
-          <h1 class="couple-names">Aadarsh <span class="and-symbol">&</span> Sonakshi</h1>
-          <img src="image/front.png" alt="">
+           <h1 class="couple-names">Sonakshi <span class="and-symbol">weds</span> Aadarsh</h1>
+            <!-- MP4 video replacing the image -->
+    <video autoplay muted loop playsinline class="header-video">
+        <source src="image/Video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
             <p class="wedding-date">6 Feburary 2026</p>
             <p>Together with our families, we invite you to celebrate our wedding</p>
         </div>
@@ -745,7 +763,18 @@
 
         <div class="invitation-row">
 
-            <!-- Groom Side -->
+           <!-- Bride Side -->
+            <div class="invitation-block">
+                <h3 class="name-title">हृदयकन्या सोनाक्षी</h3>
+                <p><strong>सुपुत्री :</strong> श्रीमती सीमा सिन्हा एवं श्री विनय कुमार</p>
+                <p>ग्राम - भोरेहाँ, पोस्ट - पताही</p>
+                <p>जिला - सीतामढ़ी</p>
+            </div>            
+            <!-- Mid Icon -->
+            <div class="invitation-mid">
+               <img src="image/Joining_hand-removebg-preview.png" alt="joining hands">
+            </div>
+           <!-- Groom Side -->
             <div class="invitation-block">
                 <h3 class="name-title">हृदयांश आदर्श</h3>
                 <p><strong>सुपुत्र :</strong> श्रीमती भारती श्रीवास्तव एवं श्री अशोक कुमार श्रीवास्तव</p>
@@ -753,20 +782,6 @@
                 <p>आर.एन.ए.आर. कॉलेज के पीछे, श्रीकृष्णपुरी (पश्चिमी)</p>
                 <p>समस्तीपुर</p>
             </div>
-
-            <!-- Mid Icon -->
-            <div class="invitation-mid">
-                <img src="image/handshake.png" alt="joining hands">
-            </div>
-
-            <!-- Bride Side -->
-            <div class="invitation-block">
-                <h3 class="name-title">हृदयकन्या सोनाक्षी</h3>
-                <p><strong>सुपुत्री :</strong> श्रीमती सीमा सिंह एवं श्री विनय कुमार</p>
-                <p>ग्राम - भोरेहाँ, पोस्ट - पताही</p>
-                <p>जिला - सीतामढ़ी</p>
-            </div>
-
         </div>
 
         <h3 class="event-title">के मांगलिक परिचयोत्सव</h3>
@@ -791,7 +806,7 @@
                 <h4>दर्शानाभिलाषी :-</h4>
                 <p>अनिल कुमार प्रसाद</p>
                 <p>सुनील कुमार प्रसाद</p>
-                <p>रेषु, शुभम एवं समस्त परिवार</p>
+                <p>रेषु, शुभम एवं समस्त श्रीवास्तव परिवार</p>
             </div>
 
             <!-- Bride Side Family -->

@@ -637,25 +637,33 @@ section, .section {
     margin-bottom: 10px;
 }
 
+/* Joining Hand – BOX */
 .invitation-mid {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
+/* Image – desktop */
 .invitation-mid img {
-    width: 220px;
-    max-width: 100%;
+    width: 320px;        /* Normal size */
     height: auto;
+    max-width: 100%;
 }
 
-/* Mobile */
+/* 📱 MOBILE – BIG BUT SAFE */
 @media (max-width: 768px) {
     .invitation-mid img {
-        width: 300px;   /* BIG on mobile */
+        width: 100%;          /* Fill the box */
+        max-width: 380px;     /* Control max size */
     }
 }
+
 
 
 .event-title {

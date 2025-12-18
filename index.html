@@ -623,11 +623,49 @@
     margin-bottom: 10px;
 }
 
-.invitation-mid img {
-    width: 75px;
-   justify-content: center;
-    
+.invitation-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
+
+.invitation-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+
+/* Image */
+.invitation-mid img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;        /* Desktop */
+    max-width: 90%;
+    height: auto;
+}
+
+/* 📱 FORCE MOBILE FIX */
+@media screen and (max-width: 768px) {
+    .invitation-mid {
+        width: 200%;
+        padding: 25px;
+        text-align: center;
+    }
+
+    .invitation-mid img {
+        width: 150% !important;   /* FORCE LARGE */
+        max-width: 300px;
+        margin: 0 auto !important;
+    }
+}
+
+
+
 
 .event-title {
     text-align: center;

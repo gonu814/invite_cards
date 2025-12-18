@@ -16,9 +16,28 @@
             box-sizing: border-box;
         }
        html, body {
+   width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Fix sections */
+section, .section {
+    height: auto !important;
+    min-height: auto;
+    overflow: visible;
+}
+
+/* Disable heavy effects on mobile */
+@media (max-width: 768px) {
+    video,
+    .fixed-bg,
+    .parallax {
+        display: none !important;
     }
+}
 
         :root {
             --gold: #D4AF37;
@@ -28,14 +47,14 @@
             --light-gold: #F4E4A6;
         }
 
-        body {
+        /* body {
             font-family: 'Poppins', sans-serif;
             background-color: var(--cream);
             color: #333;
             overflow-x: hidden;
             -webkit-overflow-scrolling: touch;
 
-        }
+        } */
 
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;

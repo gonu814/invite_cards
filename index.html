@@ -30,15 +30,6 @@ section, .section {
     overflow: visible;
 }
 
-/* Disable heavy effects on mobile */
-@media (max-width: 768px) {
-    video,
-    .fixed-bg,
-    .parallax {
-        display: none !important;
-    }
-}
-
         :root {
             --gold: #D4AF37;
             --maroon: #800020;
@@ -80,6 +71,7 @@ section, .section {
         .header-content {
             position: relative;
             z-index: 2;
+            overflow: hidden;
         }
 
         .couple-names {
@@ -653,14 +645,11 @@ section, .section {
 }
 
 .invitation-mid {
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 20px auto;
+    margin-top: 20px;
 }
-
-
 
 /* Image */
 .invitation-mid img {
@@ -671,18 +660,16 @@ section, .section {
     height: auto;
 }
 
-/* 📱 FORCE MOBILE FIX */
-@media screen and (max-width: 150px) {
-    .invitation-mid {
-        width: 200%;
-        padding: 25px;
-        text-align: center;
-    }
+.invitation-mid img {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
 
+/* Mobile */
+@media (max-width: 768px) {
     .invitation-mid img {
-        width: 150% !important;   /* FORCE LARGE */
-        max-width: 300px;
-        margin: 0 auto !important;
+        width: 300px;   /* BIG on mobile */
     }
 }
 
@@ -733,11 +720,20 @@ section, .section {
     color: #d1c44c; /* beautiful pink/maroon tone */
 }
 .header-video {
-    width: 90%;
+    width: 80%;
     max-width: 300px;
     border-radius: 10px;
     display: block;
     margin: 10px auto;
+    object-fit: cover;
+}
+/* Mobile fix */
+@media (max-width: 768px) {
+    .header-video {
+        min-height: 60vh;
+        width: 100%;
+        object-fit: cover;
+    }
 }
     </style>
 </head>
